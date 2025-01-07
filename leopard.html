@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            *{
+                margin: 0px 0px;
+                padding: 0px 0px;
+            }
+           h2{
+              text-align: center;
+              margin-top: 70px;
+              font-weight: bold;
+           }
+          .d1{
+             position: fixed;
+             top: 0%;
+             z-index: 9;
+             text-align: center;
+             background-color: rgb(73, 59, 59);
+             padding: 10px;
+          }
+          .section1{
+             padding: 5px;
+             color: white;
+             font-size: 20px;
+             
+          }
+          .section2{
+             padding: 7px;
+             font-weight: bold;
+           
+          }
+          .section2 a{
+             padding: 3px 20px;
+             color: white;
+             text-decoration: none;
+             transition: 2s;
+          }
+          .section2 a:hover{
+             color: red;
+          }
+
+          .d2{
+             position: fixed;
+             top: 59px;
+             padding: 0px 0px;
+             width: 100%;
+             height: 560px;
+          } 
+          .section3{
+             width: 100%;
+             padding: 0px 0px;
+             
+          }
+          .section3 img{
+            height: 560px;
+            width: 100%;
+            margin: 0px 0px;
+          }
+          .section4{
+            width: fit-content;
+            height: fit-content;
+            top: -340px;
+            left: 800px;
+            text-align: center;
+            color: white;
+          }
+          .section4 #s1{
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px black;
+          }
+          .section4 #s1:hover{
+             text-shadow: 5px 5px 5px rgb(116, 105, 42);
+          }
+          .section4 #s2{
+            font-size: 20px;
+          }
+          
+          .d3{
+            top: 620px;
+            height: 600px;
+            background-color: white;
+            z-index: 1;
+          }
+          .d3 #s3{
+            top: 30px;
+            text-align: center;
+            color: black;
+            
+          }
+          .d3 .fea{
+            height: 400px;
+            margin: 20px 50px;
+            font-size: 15.3px;
+            text-align: justify;
+            border-radius: 5px;
+            box-shadow: 2px 5px 5px  black;
+            background-color: aquamarine;
+            transition: 1s;
+          }
+          .d3 .fea:hover{
+            background-color: orange;
+            transform: scale(1.1);
+          }
+          .d3 h2{
+            text-align: center;
+            padding-right: 25px;
+          }
+          .d3 #i1{
+            width: 100px;
+            height: 100px;
+            margin: 5px 0px 0px 30px;
+            border-radius: 20px;
+          }
+          .d4{
+            clear: both;
+            height: 1150px;
+            margin-top: 850px;
+            background-color: white;
+          }
+          .d4 .section9{
+            width: 280px;
+            height: 200px;
+            margin: 40px 20px 0px 15px;
+            opacity: 0.9; 
+            transition: 1s;
+          }
+          .d4 .section9:hover{
+            background-color: orange;
+            transform: scale(1.2);
+          }
+          .d4 h3{
+            color: white;
+            font-weight: bolder;
+            text-shadow: 5px 5px 5px black;
+          }
+          .section9 P{
+            padding: 20px 0px;
+            color: white;
+            font-weight: bold;
+          }
+          .section9 button{
+            width: 100px;
+          }
+          .d4 .v1{
+            background-image: url(acc/bike1.jpeg);
+            background-size: 100% 100%;
+          }
+          .d4 .v2{
+            background-image: url(acc/bike2.jpeg);
+            background-size: 100% 100%;
+          }
+          .d4 .v3{
+            background-image: url(acc/bike3.jpeg);
+            background-size: 100% 100%;
+          }
+          .d4 .v4{
+            background-image: url(acc/bike4.jpeg);
+            background-size: 100% 100%;
+          }
+
+          .d4 .section10 .n1{
+           height: 250px;
+           width: 350px;
+           margin: 15px 30px;
+           box-shadow: 0px 0px 5px 1px black;
+          }
+          .d4 .section10 .n1 p{
+            padding: 3px;
+            text-align: left;
+            font-size: 18px;
+            background-color: white;
+
+          }
+          .d4 .section10 .n1 img{
+            width: 320px;
+            height: 215px;
+          }
+       
+        .d5{
+           top: 250px;
+           height: 350px;
+           background-color: white;
+        }
+        .d5 .section11{
+          left: 200px;
+          padding: 10px;
+        }
+        .d5 .section11 p{
+          text-align: justify;
+          margin-top: 10px;
+          font-size: 15px;
+        }
+
+        .d6{
+          height: 530px;
+          top: 500px;
+          background-color: white;
+        }
+        .d6 .section12 form{
+          width: 600px;
+          padding: 20px 100px;
+        }
+       
+        .d7{
+          height: 100px;
+          top: 700px;
+          background-color: white;
+        }
+        .d7 p{
+          text-align: center;
+          padding: 30px;
+          font-size: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d1" >
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 section1">
+                LEOPARD
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 section2">
+                <a href="#j1">FEATURES</a>
+                <a href="#j4">SHOP</a>
+                <a href="#j5">ABOUT</a>
+                <a href="#j6">CONTACT</a>
+            </div>   
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d2" > 
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section3">
+                <img src="acc/bike bac2.jpg" alt="">
+            </div>
+
+             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section4">
+                <p id="s1">L E O P A R D</p>
+                <p id="s2">Presenting India ka Bike | India's Fastest Bike Ever</p>
+             </div>
+        </div>
+ 
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d3" id="j1">
+
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>FEATURES</h2>
+             <hr>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 section5 fea">
+             <p>
+              <img src="acc/tools1.png" alt="" id="i1">
+             <h2>Repair</h2><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis inventore fugit magnam quod atque dicta nemo. 
+             </p>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 section6 fea">
+            <p>
+              <img src="acc/tools2.png" alt="" id="i1">
+              <h2>Speed</h2><br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis inventore fugit magnam quod atque dicta nemo. 
+            </p>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 section7 fea">
+            <img src="acc/tools3.jpeg" alt="" id="i1">
+            <p> <h2>Tire sales</h2> <br>
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis inventore fugit magnam quod atque dicta nemo. </p>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 section8 fea">
+            <img src="acc/tools4.png" alt="" id="i1">
+            <p> <h2>Spare part</h2><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis inventore fugit magnam quod atque dicta nemo. </p>
+           </div>
+        </div>
+       </div>
+       
+      
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d4" id="j4">
+          <h2>SHOP</h2>
+          <hr>
+         <div class="col-xs-2 col-sm-2 col-md-2  col-lg-2 section9 v1">
+           <h3>BIKES</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+           <button type="button" class="btn  btn-block btn-warning">SHOP NOW</button>
+           
+         </div>
+        
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section9 v2">
+          <h3>HELMET</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <button type="button" class="btn  btn-block btn-warning">SHOP NOW</button>
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section9 v3">
+          <h3>WHEEL</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <button type="button" class="btn  btn-block btn-warning">SHOP NOW</button>
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 section9 v4">
+          <h3>CLOTHS</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <button type="button" class="btn  btn-block btn-warning">SHOP NOW</button>
+        </div>       
+        
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section10">
+           
+           <h2>NEWLY ARRIVED</h2>
+           <hr>
+           <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 n1">
+             <img src="acc/bike1.jpeg" alt="">
+             <P>INR XX,XXX/- (39% off)</P>
+           </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 n1">
+             <img src="acc/bike2.jpeg" alt="">
+             <P>INR XX,XXX/- (39% off)</P>
+           </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 n1">
+             <img src="acc/bike7.jpeg" alt="">
+             <P>INR XX,XXX/- (52% off)</P>
+           </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 n1">
+             <img src="acc/bike2.jpeg" alt="">
+             <P>INR XX,XXX/- (65% off)</P>
+           </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 n1">
+             <img src="acc/bike1.jpeg" alt="">
+             <P>INR XX,XXX/- (29% off)</P>
+           </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 n1">
+             <img src="acc/bike6.jpeg" alt="">
+             <P>INR XX,XXX/- (19% off)</P>
+            </div>
+         </div>
+    </div>
+
+
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d5" id="j5">
+      
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 section11">
+      <h2>ABOUT</h2>
+      <hr>
+      <p>
+        Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </p>
+      </div>
+    </div>
+    
+
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d6" id="j6">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 section12" >
+        <h2>CONTACT US</h2>
+        <hr>
+         <form action="" method="POST" role="form">
+            
+        
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+            </div>
+        
+            <div class="form-group">
+                <label for="">E-mail</label>
+                <input type="email" class="form-control" id="" placeholder="Input field">
+            </div>
+
+            <div class="form-group">
+              <label for="">Mob.No.</label>
+              <input type="number" class="form-control" id="" placeholder="Input field">
+          </div>
+
+          <div class="form-group">
+            <label for="">Message</label>
+            <input type="text" class="form-control" id="" placeholder="Input field">
+          </div>
+            
+        
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 section13">
+       <h2>DETAILS</h2> 
+       <hr>
+       <p>
+          Leopard Pvt. Ltd.  <br>
+          Bhakti Constrution  <br>
+          Beed, India     <br>
+          Pin: 431122     <br>
+          Phone: +91 8600490485   <br>
+          Email: vaibhavj4115@gmail.com  <br>
+       </p>  
+      </div>
+    </div>
+    
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d7">
+        <p>
+          Copyright © 2017-18 Leopard Pvt. Ltd.
+        </p>
+      </div>
+      
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
